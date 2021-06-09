@@ -81,6 +81,8 @@ while True:
     cv2.imshow("Result", imgResult)
     cv2.imshow("Hichem Inversé", hichem)
     key = cv2.waitKey(1) & 0xFF
+    if key == ord('a'):
+        cv2.imshow("New", hichem)
     if key == ord('q'):
         break
 cv2.destroyAllWindows()
